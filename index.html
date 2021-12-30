@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="shortcut icon" href="HeartYarn.png" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+
+
+.left-col{
+  /*float: left;*/
+  margin-left: 6%;
+  display: flex;
+  align-items: center;
+}
+
+.left-col p{
+  font-size: 18px;
+  color: #5f5f5f;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="timeline">
+
+  <div class="container left">
+    <div class="content">
+      <h2>Instruction</h2>
+      <p>•Click the Sparkles "✨" or Message (Ex. "Message: ✨") to start reading the Message.</p>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>HAPPY NEW YEAR!✨</h2>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2>This message is only for you Ms. Andrea Joy Almaza.</h2>
+    </div>
+  </div>
+
+  <div class="container right">
+    <div class="content">
+      <h2>I love you Baby, and I love to love you for the rest of my life.</h2>
+    </div>
+  </div>
+
+  <div class="container left">
+    <div class="content">
+      <h2 href="#" onclick="typeWriter1()">Message: ✨</h2>
+      <p id="demo1">Message :: </p>
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+var i1 = 0;
+
+var txt1 = 'Hi Babyyyyyyyyyyyyy, sorry corny kasi naka QR HAHAHAHAHAHA Happy new year Ms. Joy, my Baby! Ikaw yung taong takot na takot ako na mawala, ikaw yung tao na nakakapag ayos saakin para na din sa ikabubuti ko, ikaw yung taong hinihiling ko, yung lahat para saakin. Thank you for making my year end as the best day of my year bukod sa nung araw na sinagot mo ako Baby, one of the best ito kasi nandito ka parin saakin, ako parin, ako lang. Gusto ko mag umpisa yung year 2022 ko na positive ako, at nangyayari ngayon dahil sayo, napaka saya ko ngayon, the first day of this year is the best, sobrang thankful ko parin sayo, at sobrang saya ko dahil sayo, alam mo ba na for me ah, yung pag papasaya mo saakin, yun yung pinaka masaya na naranasan ko HAHAHA, I mean ano kasi, ramdam din nila dito sa bahay na masaya ako ganun, kasi masungit ako kahit sa bahay, takot nga sila na hindi talaga ako kakausapin eh, pero dahil sayo nagiging sobrang saya ko na ngayon ko lang talaga naramdaman dahil sayo, na mas nagiging masaya ako kasi nagiging OK din relationship ko sa Fam ko dahil na din sayo, basta! Hindi ko maexplain kung gaano ako ka-thankful sayo, kung gaano ako kasaya dahil sayo, kung gaano ako kasaya na meron akong ikaw. I love you Babyyyyyyyyyyyyyy!💖 I want to spend the rest of my life with the most beautiful woman in the world, and that woman is you Ms. Andrea Joy Almaza, gagawin ko lahat para sayo Baby, hindi kita bibiguin, mwaa!😚';
+
+var speed1 = 30;
+
+function typeWriter1() {
+  if (i1 < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(i1);
+    i1++;
+    setTimeout(typeWriter1, speed1);
+  }
+}
+
+</script>
+
+</html>
